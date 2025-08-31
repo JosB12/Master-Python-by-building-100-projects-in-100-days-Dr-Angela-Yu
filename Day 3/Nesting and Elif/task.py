@@ -1,31 +1,41 @@
 print("Welcome to the rollercoaster!")
 height = int(input("What is your height in cm? "))
-
+bill = 0
 if height >= 120:
     print("You can ride the rollercoaster")
     age = int(input("What's your age? "))
     if age <= 12:
-        print("pay 5 dollars")
+        bill = 5
+        print("child tickets are 5 dollars")
     elif age <= 18:
-        print("pay $7 dollars")
+        bill = 7
+        print("Youth tickets are $7 dollars")
     else:
-        print("pay $12 dollars")
+        bill = 12
+        print("Adult tickets are $12 dollars")
+
+    want_photo = input("Would you like to have a photo take ? type y for Yes or n fot Not")
+    if want_photo == "y":
+        bill += 3
+    print(f"Your ticket cost is {bill}")
 else:
     print("Sorry you have to grow taller before you can ride.")
 
+
+
 #BMI Calculator with Interpretations
 
-weight = 85
-height = 1.85
-
-bmi = weight / (height ** 2)
+# weight = 85
+# height = 1.85
+#
+# bmi = weight / (height ** 2)
 
 # 🚨 Do not modify the values above
 # Write your code below 👇
 
-if bmi < 18.5:
-    print("underweight")
-elif bmi >= 18.5 and bmi < 25:
-    print("normal weight")
-elif bmi >= 25:
-    print("overweight")
+# if bmi < 18.5:
+#     print("underweight")
+# elif bmi >= 18.5 and bmi < 25:
+#     print("normal weight")
+# elif bmi >= 25:
+#     print("overweight")
