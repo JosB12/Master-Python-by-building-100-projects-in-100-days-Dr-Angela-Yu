@@ -1,1 +1,5 @@
+import random
 friends = ["Alice", "Bob", "Charlie", "David", "Emanuel"]
+random_friend = random.choice(friends)
+print(f"{random_friend} is going to buy the meal today!")
+
