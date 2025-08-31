@@ -37,19 +37,17 @@ if way == "l":
     if way_two == "y":
         second_choose = "You row the boat across... the water is calm and silent."
         print(second_choose)
+        way_three = input(
+            "🏰 You reach an ancient fortress with three doors: red (R), blue (B), yellow (Y). Which one do you choose? ").lower()
+        if way_three == "y":
+            third_choose = "🎉 You push open the yellow door and discover the hidden treasure. YOU WIN!"
+            print(third_choose)
+        else:
+            third_choose = "💀 Behind the door lies a deadly trap. The treasure is lost forever. GAME OVER."
+            print(third_choose)
     else:
         second_choose = "You dive in, but hungry sharks surround you. 🦈 GAME OVER."
         print(second_choose)
-        exit()
-
-    way_three = input("🏰 You reach an ancient fortress with three doors: red (R), blue (B), yellow (Y). Which one do you choose? ").lower()
-    if way_three == "y":
-        third_choose = "🎉 You push open the yellow door and discover the hidden treasure. YOU WIN!"
-        print(third_choose)
-    else:
-        third_choose = "💀 Behind the door lies a deadly trap. The treasure is lost forever. GAME OVER."
-        print(third_choose)
-        exit()
 else:
     first_way = "⚔️ Pirates ambush you on the right path and capture you. GAME OVER."
     print(first_way)
